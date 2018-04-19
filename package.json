@@ -1,22 +1,25 @@
 {
   "name": "nextjs-starter",
   "version": "5.3.0",
-  "description":
-    "A starter Next.js project with email and oAuth authentication",
+  "description": "A starter Next.js project with email and oAuth authentication",
   "author": "Iain Collins <me@iaincollins.com>",
   "license": "ISC",
   "repository": "https://github.com/iaincollins/nextjs-starter.git",
   "main": "index.js",
   "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.42",
     "babel-core": "^6.26.0",
     "babel-plugin-wrap-in-js": "^1.1.1",
     "bootstrap": "^4.0.0",
+    "classnames": "^2.2.5",
     "connect-mongo": "^2.0.1",
     "dotenv": "^5.0.0",
     "express-session": "^1.15.5",
     "ionicons": "^3.0.0",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.2.1",
+    "jss": "^9.8.1",
+    "material-ui": "^1.0.0-beta.42",
     "mongodb": "^3.0.2",
     "nedb": "^1.8.0",
     "next": "^5.0.0",
@@ -34,6 +37,7 @@
     "react": "^16.2.0",
     "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.2.0",
+    "react-jss": "^8.4.0",
     "react-syntax-highlighter": "^7.0.0",
     "react-transition-group": "^2.2.1",
     "reactstrap": "^5.0.0-alpha.4",
@@ -66,8 +70,13 @@
   "xo": {
     "space:": 2,
     "semicolon": false,
-    "extends": ["xo-space", "xo-react/space"],
-    "ignores": ["next.config.js"]
+    "extends": [
+      "xo-space",
+      "xo-react/space"
+    ],
+    "ignores": [
+      "next.config.js"
+    ]
   },
   "now": {
     "name": "nextjs-starter",
