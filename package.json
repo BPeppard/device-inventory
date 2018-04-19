@@ -1,7 +1,8 @@
 {
   "name": "nextjs-starter",
   "version": "5.3.0",
-  "description": "A starter Next.js project with email and oAuth authentication",
+  "description":
+    "A starter Next.js project with email and oAuth authentication",
   "author": "Iain Collins <me@iaincollins.com>",
   "license": "ISC",
   "repository": "https://github.com/iaincollins/nextjs-starter.git",
@@ -40,6 +41,7 @@
     "universal-cookie": "^2.1.2"
   },
   "devDependencies": {
+    "cross-env": "^5.1.4",
     "eslint": "^4.5.0",
     "eslint-config-xo": "^0.18.2",
     "eslint-config-xo-react": "^0.13.0",
@@ -53,7 +55,7 @@
   },
   "scripts": {
     "test": "xo",
-    "dev": "NODE_ENV=development PORT=3000 node index.js",
+    "dev": "cross-env NODE_ENV=development PORT=3000 node index.js",
     "build": "next build",
     "start": "node index.js",
     "postinstall": "next build"
@@ -64,13 +66,8 @@
   "xo": {
     "space:": 2,
     "semicolon": false,
-    "extends": [
-      "xo-space",
-      "xo-react/space"
-    ],
-    "ignores": [
-      "next.config.js"
-    ]
+    "extends": ["xo-space", "xo-react/space"],
+    "ignores": ["next.config.js"]
   },
   "now": {
     "name": "nextjs-starter",
